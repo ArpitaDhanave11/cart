@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products</title>
+  <style>
+    .container { display: flex; gap: 20px; justify-content: center; padding: 30px; }
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover { background-color: darkgreen; }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Products</h1>
+  <div class="container">
+    <div class="card">
+      <h3>Smart Watch</h3>
+      <p>Price: $99.99</p>
+      <button onclick="addToCart('Smart Watch', 99.99)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Headphones</h3>
+      <p>Price: $49.99</p>
+      <button onclick="addToCart('Headphones', 49.99)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <h3>Fitness Band</h3>
+      <p>Price: $29.99</p>
+      <button onclick="addToCart('Fitness Band', 29.99)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <a href="cart.html">Go to Cart</a>
+  </div>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
